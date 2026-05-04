@@ -1,0 +1,540 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{russian}
+\setmainfont{Noto Serif}
+\setsansfont{Noto Sans}
+\setmonofont{DejaVu Sans Mono}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{array,longtable,booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=black}
+\setlist{nosep,leftmargin=*}
+\DeclareMathOperator{\Spin}{Spin}
+\DeclareMathOperator{\Tr}{Tr}
+\newcommand{\TMI}{\mathcal T_{MI}}
+\newcommand{\Adm}{\operatorname{Adm}}
+\newcommand{\Struct}{\operatorname{Struct}}
+\newcommand{\Dist}{\operatorname{Dist}}
+\newcommand{\Cond}{\operatorname{Cond}}
+\newcommand{\SM}{\mathrm{SM}}
+\newcommand{\GR}{\mathrm{GR}}
+\newcommand{\QM}{\mathrm{QM}}
+\newcommand{\QG}{\mathrm{QG}}
+\newcommand{\BH}{\mathrm{BH}}
+\newcommand{\DE}{\mathrm{DE}}
+\newcommand{\DM}{\mathrm{DM}}
+\newcommand{\dd}{\,d}
+\title{TMI-ToE 1.0\\\large Interface-Field Architecture for the Unification of Fundamental Interactions}
+\author{Theory of Manifold Interfaces}
+\date{Version 1.0}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+This document fixes the module \textbf{TMI-ToE 1.0} within the Theory of Manifold Interfaces. Its purpose is not to claim a completed ``Theory of Everything'', but to define a minimal consistent architecture in which the four fundamental interactions are described as projections of a unified interface curvature.
+
+Short status:
+\[
+\boxed{\mathrm{TMI\mbox{-}ToE\ 1.0}\neq \text{a complete Theory of Everything}}
+\]
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering $\mathrm{TMI\mbox{-}ToE\ 1.0}$ is a minimal interface-field architecture of unification.}}
+\end{center}
+
+Main idea:
+\[
+\boxed{F_a=\pi_a(\mathbb F_I),\qquad a\in\{G,S,W,EM\}}
+\]
+where $\mathbb F_I$ is the universal interface curvature, and $F_G,F_S,F_W,F_{EM}$ are the gravitational, strong, weak, and electromagnetic regimes.
+
+\section{Initial status of the module}
+
+The physical branch of TMI already contains several modules:
+\begin{itemize}
+  \item \textbf{TMI-QG}: interface geometric decoherence, the quantity $\Gamma_I$, a testable hypothesis, and a statistical form.
+  \item \textbf{TMI-Dark}: the dark sector as a regime of the interface field $\chi_I=\chi_0+\delta\chi$.
+  \item \textbf{TMI-BH}: a black hole as a one-way causal-informational interface.
+  \item \textbf{TMI-ToE}: an architecture unifying these physical layers through a universal connection, curvature, and interface field.
+\end{itemize}
+
+TMI-ToE does not replace established theories. It requires general relativity, the Standard Model, and quantum mechanics to be recovered as limiting cases.
+
+\section{TMI-ToE-0.9: consistency conditions}
+
+The goal of version 0.9 is not to add new concepts, but to close the technical conditions of admissibility. If any of these conditions fails, the current TMI-ToE version must be revised.
+
+\subsection{Recovery of known theories}
+
+\subsubsection*{General-relativistic limit}
+
+If the interface sector is switched off:
+\[
+\chi_I\to0,\qquad \mathcal L_{mix}\to0,
+\]
+then:
+\[
+\boxed{S_{TMI-ToE}\to S_{GR}+S_{SM}}.
+\]
+If matter and gauge fields are also removed:
+\[
+\mathcal L_{SM}\to0,
+\]
+then:
+\[
+\boxed{S_{TMI-ToE}\to S_{GR}}.
+\]
+
+\subsubsection*{Standard Model limit}
+
+For a fixed geometry:
+\[
+g_{\mu\nu}=g_{\mu\nu}^{fixed}
+\]
+and vanishing interface mixing:
+\[
+\chi_I\to0,\qquad \zeta_a,\eta_H,y_I\to0,
+\]
+one must obtain:
+\[
+\boxed{S_{TMI-ToE}\to S_{SM}}.
+\]
+Thus the low-energy gauge limit must contain
+\[
+\boxed{SU(3)\times SU(2)\times U(1)}.
+\]
+
+\subsubsection*{Quantum limit}
+
+For a fixed background and a weak interface sector, standard quantum dynamics must be recovered:
+\[
+\boxed{i\hbar\frac{\partial}{\partial t}\Psi=\widehat H\Psi}
+\]
+or the corresponding quantum field-theoretic form on a fixed background.
+
+\subsection{The universal group $G_I$}
+
+The minimal requirement is:
+\[
+\boxed{G_I\supset \Spin(1,3)\times SU(3)\times SU(2)\times U(1)}.
+\]
+
+For version 1.0, the safest form is not to assert a new simple group, but to fix an inclusion structure:
+\[
+\boxed{G_I=G_{grav}\ltimes G_{SM}\ltimes G_{\chi}}
+\]
+where
+\[
+G_{grav}\supset\Spin(1,3),\qquad G_{SM}=SU(3)\times SU(2)\times U(1).
+\]
+
+Thus $G_I$ is the group of admissible interface transformations containing gravitational, gauge, and interface symmetries.
+
+\subsection{Projection consistency}
+
+We introduce algebra projections:
+\[
+\boxed{\pi_a:\mathfrak g_I\to\mathfrak g_a,\qquad a\in\{G,S,W,EM\}},
+\]
+where $\mathfrak g_I=\mathrm{Lie}(G_I)$.
+
+Then the physical curvatures are:
+\[
+\boxed{F_G=\pi_G(\mathbb F_I)},\qquad
+\boxed{F_S=\pi_S(\mathbb F_I)},
+\]
+\[
+\boxed{F_W=\pi_W(\mathbb F_I)},\qquad
+\boxed{F_{EM}=\pi_{EM}(\mathbb F_I)}.
+\]
+
+\subsection{Gauge invariance}
+
+The mixing term must preserve the gauge structure of the Standard Model. A safe form is:
+\[
+\boxed{
+\mathcal L_{mix}^{gauge}
+=-\frac14\sum_{a=1}^{3}\zeta_a\frac{\chi_I^2}{M_I^2}\Tr(F_{a\mu\nu}F_a^{\mu\nu})
+}
+\]
+which is admissible if $\chi_I$ is a gauge singlet:
+\[
+\boxed{\chi_I\sim(1,1,0)}.
+\]
+
+\subsection{Fermionic consistency}
+
+A raw term $\chi_I\bar\Psi\Psi$ may violate gauge invariance before electroweak symmetry breaking. A safer coupling to fermions is:
+\[
+\boxed{
+\mathcal L_{\chi\Psi}
+=
+\sum_f y_{I,f}\frac{\chi_I}{M_I}\bar\Psi_{L,f}H\Psi_{R,f}+h.c.
+}
+\]
+where $H$ is the Higgs field and $f$ indexes fermion type and generation.
+
+\subsection{Higgs sector}
+
+A compatible potential is:
+\[
+\boxed{
+V(H,\chi_I)=
+-\mu_H^2H^\dagger H+
+\lambda_H(H^\dagger H)^2+
+V(\chi_I)+
+\eta_H\chi_I^2H^\dagger H
+}
+\]
+where
+\[
+\boxed{V(\chi_I)=V_0+\frac12m_I^2\chi_I^2+\frac{\beta_I}{4}\chi_I^4}.
+\]
+
+The effective Higgs parameter is:
+\[
+\boxed{\mu_{H,eff}^2=\mu_H^2-\eta_H\chi_I^2}.
+\]
+Thus the Higgs vacuum expectation value may receive an interface correction:
+\[
+\boxed{v_H^{eff}=v_H(\chi_I)}.
+\]
+
+\subsection{Anomaly cancellation}
+
+If $\chi_I$ is a gauge singlet and no new chiral fermions are added, the anomaly structure of the Standard Model remains unchanged:
+\[
+\boxed{\mathcal A_{TMI-ToE}=\mathcal A_{SM}=0}.
+\]
+If new fermions or new $G_I$ representations are introduced in future versions, one must require:
+\[
+\boxed{\mathcal A_{G_I}=0}.
+\]
+
+\subsection{EFT status}
+
+The present version must be treated as an effective interface-field theory:
+\[
+\boxed{TMI\mbox{-}ToE=\text{effective interface-field theory}}
+\]
+valid at energies
+\[
+\boxed{E\ll M_I}.
+\]
+Operators such as
+\[
+\frac{\chi_I^2}{M_I^2}F_{\mu\nu}F^{\mu\nu},\qquad
+\frac{\chi_I}{M_I}\bar\Psi_LH\Psi_R
+\]
+are effective operators suppressed by the interface scale $M_I$.
+
+\subsection{Stability}
+
+The potential must be bounded from below. Sufficient conditions are:
+\[
+\boxed{\beta_I>0,\qquad \lambda_H>0}.
+\]
+The mixed potential must not generate an unstable vacuum. A working condition is:
+\[
+\boxed{\eta_H>-2\sqrt{\lambda_H\beta_I/4}}.
+\]
+
+\subsection{Compatibility with other TMI modules}
+
+\subsubsection*{Connection with TMI-QG}
+\[
+\boxed{\chi_I\Rightarrow\Gamma_I},\qquad
+\boxed{\Delta\Gamma_I=\kappa_Ix_I}.
+\]
+
+\subsubsection*{Connection with TMI-Dark}
+\[
+\boxed{\chi_I=\chi_0+\delta\chi},\qquad
+\boxed{\chi_0\Rightarrow DE,\quad \delta\chi\Rightarrow DM}.
+\]
+
+\subsubsection*{Connection with TMI-BH}
+On a black-hole horizon, the restrictions
+\[
+\boxed{\mathbb A_I|_{\mathcal H_g}},\qquad
+\boxed{\mathbb F_I|_{\mathcal H_g}}
+\]
+must have a meaningful interpretation.
+
+\section{TMI-ToE-1.0: passport of the minimal completed architecture}
+
+\subsection{Name}
+
+\[
+\boxed{TMI\mbox{-}ToE\ 1.0}
+\]
+
+Full title:
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering Interface-Field Architecture for the Unification of Fundamental Interactions}}
+\end{center}
+
+\subsection{Status}
+
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering A minimal completed architecture, but not a complete physical Theory of Everything.}}
+\end{center}
+
+That is:
+\[
+\boxed{TMI\mbox{-}ToE\ 1.0\neq\text{a complete Theory of Everything}}.
+\]
+
+\subsection{Main object}
+
+\[
+\boxed{
+\mathcal M_I^{ToE}=
+(\mathcal M_U,\mathcal E_I,G_I,\mathbb A_I,\mathbb F_I,\Psi,H,\chi_I,\Adm_I,\Struct_I)
+}
+\]
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.68\linewidth}}
+\toprule
+Symbol & Meaning \\
+\midrule
+$\mathcal M_U$ & spacetime \\
+$\mathcal E_I$ & universal interface bundle \\
+$G_I$ & universal interface group \\
+$\mathbb A_I$ & universal interface connection \\
+$\mathbb F_I$ & universal interface curvature \\
+$\Psi$ & full quantum-field sector \\
+$H$ & Higgs field \\
+$\chi_I$ & interface field \\
+$\Adm_I$ & set of admissible physical transitions \\
+$\Struct_I$ & structured physical result \\
+\bottomrule
+\end{longtable}
+
+\subsection{Universal bundle}
+
+\[
+\boxed{\pi_I:\mathcal E_I\to\mathcal M_U}
+\]
+
+The fiber over a point is:
+\[
+\boxed{\mathcal F_{I,x}=\pi_I^{-1}(x)}.
+\]
+
+Working decomposition:
+\[
+\boxed{
+\mathcal F_{I,x}=\mathcal F_G\oplus\mathcal F_{SU(3)}\oplus\mathcal F_{SU(2)}\oplus\mathcal F_{U(1)}\oplus\mathcal F_\Psi\oplus\mathcal F_H\oplus\mathcal F_\chi
+}
+\]
+
+\subsection{Universal connection}
+
+\[
+\boxed{\mathbb A_I\in\Omega^1(\mathcal M_U,\mathfrak g_I)}.
+\]
+
+Working form:
+\[
+\boxed{
+\mathbb A_I=
+\omega^{ab}J_{ab}+e^aP_a+G^AT_A+W^iT_i+BY+A_\chi\Xi
+}
+\]
+where $A_\chi$ is an interface one-form. If $\chi_I$ is taken as a scalar field, one may set:
+\[
+\boxed{A_\chi=d\chi_I}.
+\]
+
+\subsection{Universal curvature}
+
+\[
+\boxed{\mathbb F_I=d\mathbb A_I+\mathbb A_I\wedge\mathbb A_I}.
+\]
+
+Projections:
+\[
+\boxed{F_a=\pi_a(\mathbb F_I),\qquad a\in\{G,S,W,EM\}}.
+\]
+
+Main formula:
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering The four fundamental interactions are projections of a unified interface curvature.}}
+\end{center}
+
+\subsection{Unified action}
+
+\[
+\boxed{S_{TMI-ToE}=S_{GR}+S_{SM}+S_\chi+S_{mix}}.
+\]
+
+Expanded form:
+\[
+\boxed{
+S_{TMI-ToE}=\int_{\mathcal M_U}\sqrt{-g}\left[
+\frac{c^4}{16\pi G}(R-2\Lambda)+\mathcal L_{SM}+\mathcal L_\chi+\mathcal L_{mix}
+\right]\dd^4x
+}
+\]
+
+Interface Lagrangian:
+\[
+\boxed{
+\mathcal L_\chi=
+-\frac12g^{\mu\nu}\nabla_\mu\chi_I\nabla_\nu\chi_I
+-V(\chi_I)-\frac12\xi_IR\chi_I^2
+}
+\]
+
+Mixing term:
+\[
+\boxed{
+\mathcal L_{mix}=
+-\frac14\sum_{a=1}^{3}\zeta_a\frac{\chi_I^2}{M_I^2}\Tr(F_{a\mu\nu}F_a^{\mu\nu})
++\eta_H\chi_I^2H^\dagger H
++\sum_f y_{I,f}\frac{\chi_I}{M_I}\bar\Psi_{L,f}H\Psi_{R,f}+h.c.
+}
+\]
+
+\subsection{Main chain}
+
+\[
+\boxed{
+\mathcal E_I\Rightarrow G_I\Rightarrow\mathbb A_I\Rightarrow\mathbb F_I\Rightarrow\{F_G,F_S,F_W,F_{EM}\}\Rightarrow\Adm_I\Rightarrow\mathcal H_I\Rightarrow\Psi\Rightarrow\Dist_{poss}\Rightarrow\Struct_I
+}
+\]
+
+Meaning:
+\begin{enumerate}
+  \item the unified interface structure defines admissible interactions;
+  \item interactions define physical transitions;
+  \item the quantum state defines the distribution of possibilities;
+  \item the interface transforms possibilities into structure.
+\end{enumerate}
+
+\section{Testable consequences}
+
+\subsection{Consequence 1: corrections to gauge couplings}
+
+From the gauge mixing term
+\[
+-\frac14\zeta_a\frac{\chi_I^2}{M_I^2}\Tr(F_{a\mu\nu}F_a^{\mu\nu})
+\]
+one obtains the effective correction:
+\[
+\boxed{
+\frac{1}{g_{a,obs}^2(E)}=
+\frac{1}{g_{a,SM}^2(E)}+
+\zeta_a\frac{\chi_I^2(E)}{M_I^2}
+}
+\]
+and therefore:
+\[
+\boxed{
+\Delta_a(E)=
+\frac{1}{g_{a,obs}^2(E)}-
+\frac{1}{g_{a,SM}^2(E)}=
+\zeta_a\frac{\chi_I^2(E)}{M_I^2}
+}
+\]
+
+Null hypothesis:
+\[
+\boxed{H_0:\zeta_a=0}.
+\]
+TMI-ToE hypothesis:
+\[
+\boxed{H_{TMI-ToE}:\exists a,\ \zeta_a\neq0}.
+\]
+
+\subsection{Consequence 2: corrections to the Higgs sector}
+
+Through $V(H,\chi_I)$ one obtains:
+\[
+\boxed{\mu_{H,eff}^2=\mu_H^2-\eta_H\chi_I^2}
+\]
+and the possible test line:
+\[
+\boxed{\Delta v_H=v_H^{obs}-v_H^{SM}=F(\eta_H,\chi_I)}.
+\]
+
+\subsection{Consequence 3: relation to interface decoherence}
+
+If:
+\[
+\Gamma_I=\lambda_I\|\chi_I\|^2
+\]
+and:
+\[
+\Delta_a(E)=\zeta_a\frac{\chi_I^2(E)}{M_I^2},
+\]
+then:
+\[
+\boxed{\Delta_a(E)=\frac{\zeta_a}{\lambda_I M_I^2}\Gamma_I(E)}.
+\]
+
+This is a cross-module prediction: the same interface intensity may appear both in decoherence and in gauge-coupling corrections.
+
+\section{Criteria of support and weakening}
+
+\subsection{Support criteria}
+
+The module receives support if:
+\begin{enumerate}
+  \item $GR$, $SM$, and $QM$ are correctly recovered;
+  \item the mixing terms preserve gauge symmetries;
+  \item no uncancelled anomalies appear;
+  \item the effects are suppressed by $M_I$ and do not contradict data;
+  \item observed corrections share a common dependence on $\chi_I^2$.
+\end{enumerate}
+
+\subsection{Weakening criteria}
+
+TMI-ToE weakens if:
+\begin{enumerate}
+  \item $GR$ or $SM$ is not recovered;
+  \item $\mathcal L_{mix}$ violates gauge invariance;
+  \item uncancelled anomalies appear;
+  \item effective corrections contradict experimental constraints;
+  \item no distinguishable testable consequence exists.
+\end{enumerate}
+
+\section{Final fixation}
+
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering $TMI\mbox{-}ToE\ 1.0$ is closed as a minimal consistent architecture.}}
+\end{center}
+
+But:
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering TMI-ToE 1.0 is not a completed physical Theory of Everything.}}
+\end{center}
+
+Proper formulation:
+\begin{quote}
+TMI-ToE-1.0 is a completed minimal architectural module of unification in which the four interactions are represented as projections of a unified interface curvature, while the interface field $\chi_I$ connects geometry, gauge fields, quantum state, dark sector, black holes, and the process of structuring.
+\end{quote}
+
+Shortest final formula:
+\[
+\boxed{\mathbb F_I=d\mathbb A_I+\mathbb A_I\wedge\mathbb A_I}
+\]
+\[
+\boxed{F_a=\pi_a(\mathbb F_I),\qquad a\in\{G,S,W,EM\}}
+\]
+\[
+\boxed{S_{TMI-ToE}=S_{GR}+S_{SM}+S_\chi+S_{mix}}
+\]
+\[
+\boxed{\chi_I\Rightarrow\{\Gamma_I,\ DarkSector,\ \Delta_a(E),\ BH\mbox{-}interface\}}
+\]
+
+\end{document}
